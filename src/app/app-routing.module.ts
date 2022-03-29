@@ -8,11 +8,18 @@ import { ViewUserComponent } from './users/view-user/view-user.component';
 
 
 const routes: Routes = [
-  {path: 'create', component: AddUserComponent },
-  {path: 'view/:id', component: ViewUserComponent},
-  {path: 'list', component: ListUsersComponent},
-  {path: 'edit/:id', component: EditUserComponent},
-  {path: 'delete/:id', component:DeleteUserComponent}
+  { path :'users',  
+    children : [
+      {path: '', component: ListUsersComponent },
+      {path: 'view/:id', component: ViewUserComponent},
+      {path: 'list', component: ListUsersComponent},
+      {path: 'edit/:id', component: EditUserComponent},
+      {path: 'delete/:id', component:DeleteUserComponent},
+      {path: 'create', component: AddUserComponent},
+
+    ]
+  }
+
 ];
 
 @NgModule({

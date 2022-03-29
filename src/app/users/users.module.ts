@@ -6,6 +6,8 @@ import { DeleteUserComponent } from './delete-user/delete-user.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 import { AddUserComponent } from './add-user/add-user.component';
 
+import {MatListModule} from '@angular/material/list';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { AddUserComponent } from './add-user/add-user.component';
     AddUserComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
+    MatListModule
   ],
   exports: [
 

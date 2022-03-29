@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { LayoutModule } from './layout/layout.module';
 import { UsersModule } from './users/users.module';
 import { HttpClientModule } from '@angular/common/http';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     LayoutModule,
     UsersModule,
+    MatListModule,
     AppRoutingModule
   ],
   providers: [],

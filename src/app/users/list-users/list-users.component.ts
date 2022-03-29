@@ -8,11 +8,15 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./list-users.component.css']
 })
 export class ListUsersComponent implements OnInit {
-
+ 
+  listUsers : any;
   constructor(private userService : UserService) { }
-  listUsers !: Observable<Object>
+  
   ngOnInit(): void {
-    this.listUsers = this.userService.listUsers();
+   this.userService.listUsers().subscribe( data => {
+    this.listUsers = data;
+
+    });
   }
 
 }
