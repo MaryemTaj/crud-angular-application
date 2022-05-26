@@ -1,13 +1,17 @@
 .example-container {
-    padding-top:60px;
+    padding-top:40px;
     width: 100%;
-    margin: 10px;
     min-height: 500px;
+    background-color:hsla(210, 40%, 98%, 0.973);
    
-  }
-  
+  }  
 .main-content{
   padding-left: 20px;
-  min-height: 700px;
+  padding-bottom: 20px;
+  
 
+}
+.mat-drawer{
+  background-color:white;
+  width: 150px;;
 }
